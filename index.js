@@ -11,8 +11,8 @@ document.getElementById("calculateBtn").addEventListener("click", function () {
   }
 
   // Convert mm to cm
-  // l1 = l1 / 10;
-  // l2 = l2 / 10;
+  l1 = l1 / 10;
+  l2 = l2 / 10;
 
   // Bulk Density
   const bd = wd / (ws - wss);
