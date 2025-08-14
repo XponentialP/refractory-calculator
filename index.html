@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refractory Material Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Refractory Test Calculator</h1>
+
+        <form id="calcForm">
+            <label for="wd">Dry Weight (W<sub>D</sub>) in g:</label>
+            <input type="number" id="wd" step="0.01" required>
+
+            <label for="ws">Saturated Weight (W<sub>S</sub>) in g:</label>
+            <input type="number" id="ws" step="0.01" required>
+
+            <label for="wss">Suspended Weight (W<sub>SS</sub>) in g:</label>
+            <input type="number" id="wss" step="0.01" required>
+
+            <label for="l1">Original Length (L<sub>1</sub>) in cm:</label>
+            <input type="number" id="l1" step="0.01" required>
+
+            <label for="l2">Final Length (L<sub>2</sub>) in cm:</label>
+            <input type="number" id="l2" step="0.01" required>
+
+            <button type="button" id="calculateBtn">Calculate</button>
+            <button type="reset">Reset</button>
+        </form>
+
+        <div id="results">
+            <h2>Results</h2>
+            <p>Bulk Density (g/cm³): <span id="bd"></span></p>
+            <p>Apparent Porosity (%): <span id="ap"></span></p>
+            <p>Water Absorption (%): <span id="wa"></span></p>
+            <p>Linear Shrinkage (%): <span id="ls"></span></p>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
